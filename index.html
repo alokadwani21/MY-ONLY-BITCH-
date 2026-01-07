@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For my bitch 🐘</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fff3b0, #cce3f6);
+  text-align: center;
+  color: #333;
+}
+
+/* PASSWORD SCREEN */
+#lockScreen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#lockScreen h1 {
+  font-family: 'Pacifico', cursive;
+  color: #ffb703;
+  font-size: 3rem;
+}
+
+#lockScreen input {
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  width: 230px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#lockScreen button {
+  margin-top: 15px;
+  padding: 10px 30px;
+  border-radius: 25px;
+  border: none;
+  background: #219ebc;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h1.main {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  color: #ffb703;
+}
+
+h2 {
+  color: #219ebc;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #ffb703;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 15px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.reason {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.reason:hover {
+  transform: scale(1.05);
+}
+
+.photo {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+footer {
+  padding: 40px;
+  font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<!-- PASSWORD SCREEN -->
+<div id="lockScreen">
+  <h1>chudail Saavi 💛</h1>
+  <p>This little surprise is locked 🔐<br>Only fucker like you allowed🤣</p>
+  <input type="password" id="password" placeholder="Bestie secret 🤍">
+  <button onclick="checkPassword()">Unlock 💫</button>
+  <p id="error" style="color:red;"></p>
+</div>
+
+<!-- MAIN CONTENT -->
+<section id="mainContent" style="display:none;">
+  <h1 class="main">For My Best Friend 💛</h1>
+  <p>This website exists because you exist 🫶</p>
+  <a href="#note" class="btn">Tap for the surprise 🎁</a>
+</section>
+
+<section id="note">
+  <div class="card">
+    <h2>A Note for You 🫂</h2>
+    <p>
+      Saavi,  
+      life honestly feels lighter with you around even though you are not around😭.  
+      From random talks to deep conversations,  
+      you’ve always been my constant 💛  
+      <br><br>
+      Thank you for being you,  
+      and for being my best friend.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Why You’re My Favourite Human 😄</h2>
+  <div class="reasons">
+    <div class="reason">You understand me without explaining 🫶</div>
+    <div class="reason">Our nonsense talks never end 😂</div>
+    <div class="reason">You support me no matter what (you have to bitch🔪)</div>
+    <div class="reason">You make bad days even worse (better)😁☀️</div>
+    <div class="reason">You’re family, not just a friend ♾️</div>
+  </div>
+</section>
+
+<section>
+  <h2>Our Memories 📸</h2>
+  <div class="reasons">
+    <img src="saavi1.jpg" class="photo">
+    <img src="saavi2.jpg" class="photo">
+    <img src="saavi3.jpg" class="photo">
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>One Thing I Want You to Know 💭</h2>
+    <p>
+      No matter where life takes us,  
+      you’ll always have a special place in my life 💛  
+    </p>
+    <p><strong>— Alok</strong></p>
+  </div>
+</section>
+
+<footer>
+  Made with 💛 for Saavi
+</footer>
+
+<!-- OPTIONAL BACKGROUND MUSIC -->
+<audio autoplay loop>
+  <source src="friendship.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function checkPassword() {
+  const correctPassword = "BITCH";
+  const entered = document.getElementById("password").value;
+
+  if (entered === correctPassword) {
+    document.getElementById("lockScreen").style.display = "none";
+    document.getElementById("mainContent").style.display = "block";
+  } else {
+    document.getElementById("error").innerText = "Oops 😅 try again";
+  }
+}
+</script>
+
+</body>
+</html>
